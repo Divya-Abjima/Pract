@@ -1,0 +1,29 @@
+p.center {
+    text-align: center;
+    color: red;
+  }
+  
+  p.large {
+    font-size: 300%;
+  }
+  p.small {
+    font-size: 200%;
+    }
+    div {
+    border: 1px solid black;
+    padding: 25px 50% 75px 100px;
+    background-color: lightblue;
+  }
+  p {
+  border:1px solid black;
+  outline-color:red;}
+  
+  p.dotted {outline-style: dotted;}
+  p.dashed {outline-style: dashed;}
+  p.solid {outline-style: solid;}
+  p.double {outline-style: double;}
+  p.groove {outline-style: groove;}
+  p.ridge {outline-style: ridge;}
+  p.inset {outline-style: inset;}
+  p.outset {outline-style: outset;}
+  

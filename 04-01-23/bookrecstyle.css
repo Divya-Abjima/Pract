@@ -1,0 +1,38 @@
+body {
+    background-image: url("books.jpg");
+    color: bisque;
+    background-attachment: fixed;
+    font-size: 12pt;
+}
+h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px 2px brown, 2px 2px 1px greenyellow;
+    font-family: Garamond, serif;
+}
+p {
+    line-height: 10mm;
+}
+#intro {
+    text-indent: 10mm;
+}
+ul {
+    list-style-image: url("open-book-clipart-03.png");
+}
+ul li {
+  background: rgba(255, 72, 0, 0.403);
+  font-size: large;
+  color: ivory;
+  list-style-position: outside;
+  max-height: 25px;
+  padding: 15px;
+  border-left: 3mm solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  margin: 10mm 0 10mm 0;
+}
+q {
+  font-weight: bold;
+  font-style: italic;
+}
+span.author {
+    font-weight: bold;
+}
