@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hidden table example</title>
+        <style>
+            table {
+                width:80%;
+                text-align: center;
+                border:0.5mm solid black;
+                border-collapse: collapse;
+                margin-top: 5%;
+            }
+            tr, td, th {
+                border:0.5mm solid black;
+                margin:15px 25px 15px 25px;
+                padding:20px;
+            }
+            tr:hover {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center">
+            <colgroup>
+                <col span="2" style="visibility: collapse" >
+            </colgroup>
+            <tr>
+                <th >Name</th>
+                <th>Residence</th>
+                <th>Contact</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>Street 4, 6th avenue, NYC, NY</td>
+                <td>484-8699-8490</td>
+                <td>mail.abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>DEF</td>
+                <td>104,YY apartments Example street, Denver, CO </td>
+                <td>565-4134-4215</td>
+                <td>mail.def@gmail.com</td>
+            </tr>
+            <tr>
+                <td>GHI</td>
+                <td>50 B, Examplton, KS</td>
+                <td>264-4621-5962</td>
+                <td>mail.ghi@gmail.com</td>
+            </tr>
+            <tr>
+                <td>JKL</td>
+                <td>Block C, Example complex, Denver, CO</td>
+                <td>236-5461-5612</td>
+                <td>mail.jkl@gmail.com</td>
+            </tr>
+            <tr>
+                <td>MNO</td>
+                <td>Waiting street, opp Example hospital, Manhattan, NY</td>
+                <td>597-5421-8795</td>
+                <td>mail.mno@gmail.com</td>
+            </tr>
+        </table>
+    </body>
+</html>
