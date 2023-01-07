@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice forms</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        form {
+            width:75%;
+            margin-top: 20px;
+            line-height: 20px;
+        }
+        div {
+           display: block;
+        }
+        fieldset {
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: whitesmoke;
+        }
+        label {
+            margin-left: 15px;
+            margin-right: 20px;
+        }
+        input {
+            min-height: 0.8mm;
+            min-width: 80px;
+            padding-top: 15px;
+            margin-bottom: 10px;
+        }
+         #pay { 
+            /* display: block; */
+        }
+        #btn {
+            width: 2cm;
+            color: white;
+            background-color: green;
+            border-radius: 5px;
+            margin: 2mm 6mm 2mm 6mm;
+            padding: 1mm 5mm 1mm 5mm;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;font-size: 30pt;">Welcome!!</h1>
+    Hello!!
+    Thank you for visiting our order placement page.
+    Please fill in your information below to place the order:
+    <div>
+    <form action="next.html" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Customer Details:</legend>
+        <label for="fname">First Name<strong style="color: red;">*</strong></label>
+        <input type="text" id="fname" name="first_name" required><br>
+        <label for="lname">Last Name<strong style="color: red;">*</strong></label>
+        <input type="text" id="lname" name="last_Name" required><br>
+        <label for="email">Your email<strong style="color: red;">*</strong></label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="telephone">Contact No.<strong style="color: red;">*</strong></label>
+        <input type="tel" id="telephone" name="telephone" required>
+    </fieldset>
+        <fieldset>
+            <legend>Address Info:</legend>
+           <label for="add_line1">Address Line 1<strong style="color: red;">*</strong></label>
+           <input type="text" id="add_line1" value="Line 1"><br>
+           <label for="add_line2">Address Line 2</label>
+           <input type="text" id="add_line2" value="Line 2"><br>
+           <label for="add_line3">Address Line 3</label>
+           <input type="text" id="add_line3" value="Line 3"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Item details:</legend>
+            <label for="product_id">Product ID:<strong style="color: red;">*</strong></label>
+                <input type="number" id="product_id" value="" required><br>
+            <label for="count">No. of items:<strong style="color: red;">*</strong></label>
+            <input type="number" id="count" value="0"required><br>
+        </fieldset>
+        <fieldset id="pay">
+            <legend>Payment Details:</legend>
+            <p>Choose a payment option:<strong style="color: red;">*</strong></p>
+            <ul style="list-style-type: none;">
+            <li><input type="radio" id="cash" name="payment" value="Cash">
+            <label for="cash">Cash</label></li>
+            <li><input type="radio" id="debit" name="payment" value="Debit">
+            <label for="debit">Debit</label></li>
+            <li><input type="radio" id="credit" name="payment" value="Credit">
+            <label for="credit">Credit</label></li>
+            <li><input type="radio" id="netbanking" name="payment" value="Net Banking">
+            <label for="netbanking">Net Banking</label></li>
+            <li><input type="radio" id="upi" name="payment" value="UPI">
+            <label for="upi">UPI</label></li>
+            </ul>
+        </fieldset>
+        <p>Click the button below to proceed to the next part!</p>
+        <input type="submit" id="btn" name="nextbtn" value="Next" style="text-align: center;">
+    </form>
+    </div>
+</body>
+</html>
