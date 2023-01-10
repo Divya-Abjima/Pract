@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox practice page</title>
+    <style>
+        .bigbox {
+            border: 3px solid black;
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        /* .section1, .section2 {
+            border: 3px solid rgb(82, 44, 44);
+        } */
+        .section1, .section2 {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            width:30%;
+        }
+        .box1 {
+            background-color: rgb(188, 88, 88);
+            padding: 3px;
+            margin: 5px;
+        }
+        .box2 {
+            background-color: rgb(137, 186, 125);
+            padding: 3px;
+            margin: 5px;
+        }
+        .box3 {
+            background-color: rgb(197, 193, 115);
+            padding: 3px;
+            margin: 5px;
+        }
+        .box4 {
+            background-color: rgb(158, 168, 229);
+            padding: 3px;
+            margin: 5px;
+        }
+         .box5 {
+            background-color: rgb(201, 128, 155);
+            padding: 3px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <span class="bigbox"> lorem35
+        <span class="section1">This is some text
+            <span class="box1">
+                This is box 1
+            </span>
+            <span class="box2">
+                This is box 2
+            </span> This is some text
+            <span class="box3">
+                This is box 3
+            </span> This is some text
+            <span class="box4">
+                This is box 4
+            </span> This is some text
+            <span class="box5">
+                This is box 5
+            </span>
+        </span>
+        <span class="section2">
+            <span class="box1">
+                This is box 1
+            </span>
+            <span class="box2">
+                This is box 2
+            </span>
+            <span class="box3">
+                This is box 3
+            </span>
+            <span class="box4">
+                This is box 4
+            </span>
+            <span class="box5">
+                This is box 5
+            </span>
+        </span>
+    </span>
+</body>
+</html>
