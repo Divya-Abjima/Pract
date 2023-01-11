@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration page</title>
+    <style>
+        form {
+            background-color: #DDD;
+            width: 50%;
+            margin: auto;
+        }
+        .container {
+            display: grid;
+            margin: 10px;
+            grid-template-columns: 1fr 2fr;
+            grid-row-gap: 20px;
+            /* justify-content: center;
+            align-items: center; */
+        }
+        .main {
+            border-radius: 5px;
+            padding:10px;
+            width: 250px;
+            margin-top: 15px;
+        }
+        /* .main:nth-child(20) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: ;
+        } */
+        /* input[type="radio"]{
+            width:8spx;
+        } */
+        select {
+            border-radius: 5px;
+            padding:10px;
+            width: 271px;
+            margin-top: 15px;
+        }
+        #reg_btn {
+            border-radius: 5px;
+            padding:10px;
+            width: 100px;
+            margin: 10px 50px;
+         }
+         .btn {
+            display: flex;
+            justify-content: center;
+         }
+    </style>
+</head>
+<body>
+    <header style="text-align: right;color:red;text-decoration:underline;text-align: center;">
+        Student Registration Form
+    </header>
+    <form action="formsubmited.html" target="_blank">
+        <div class="container">
+            <label for="fname" class="main">First Name: </label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" class="main" required>
+        <label for="lname"class="main">Last Name: </label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" class="main" required>
+        <label for="email" class="main">Email: </label>
+        <input type="email" id="email" name="email" placeholder="it should contain @,." class="main" required>
+        <label for="mob" class="main">Mobile: </label>
+        <input type="number" id="mob" name="mob" placeholder="only 10 digits are allowed" class="main" required>
+        <label for="gender" class="main" required>Gender:</label>
+            <div style="display: inline;"class="main">
+            <input type="radio" id="male" name="gender">
+            <label for="male"> Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender">
+            <label for="female">Others</label>
+            </div>
+        <label for="dob" class="main">Date Of Birth: </label>
+        <input type="date" id="dob" name="dob" class="main" required>
+        <label for="add" class="main">Address: </label>
+        <input type="textarea" name="address" rows="10" cols="20" id="add" class="main" required>
+        <label for="city" class="main">City: </label>
+        <input type="text" id="city" name="city" class="main" required>
+        <label for="pin" class="main">Area PIN: </label>
+        <input type="number" id="pin" name="pin" class="main" required>
+        <label for="state" class="main">State: </label>
+        <input type="text" id="state" name="state" class="main" required>
+        <label for="qual" class="main">Qualification: </label>
+        <select id="qual" name="qual" required>
+            <option disabled>Select an option</option>
+            <option value="btech">B.Tech.</option>
+            <option value="be">B.E.</option>
+            <option value="bsc">B.Sc.</option>
+            <option value="mtech">M.Tech.</option>
+            <option value="msc">M.Sc.</option>
+        </select>
+        <label for="cs" class="main" required>Specialization: </label>
+            <div class="main">
+                <input type="checkbox" id="cs" name="cs">
+                <label for="cs"> Computer Science</label><br>
+                <input type="checkbox" id="it" name="it">
+                <label for="it">Information Technology</label><br>
+                <input type="checkbox" id="ca" name="ca">
+                <label for="ca"> Computer Architecture</label><br>
+                <input type="checkbox" id="tc" name="tc">
+                <label for="tc">Tele Communication</label><br>
+            </div>
+        <label for="pwd" class="main" required>Password: </label>
+        <input type="password" id="pwd" name="pwd" class="main">
+    </div>
+    <div class="btn">
+        <input type="submit" id="reg_btn" name="Registered" style="background-color: green;color: white;">
+    </div>
+    </form>
+</body>
+</html>
