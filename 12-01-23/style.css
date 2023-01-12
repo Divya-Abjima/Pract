@@ -1,0 +1,144 @@
+#home {
+    display: grid;
+    width:100%;
+    grid-template-areas:
+    'head'
+    'navbar'
+    'section'
+    'footer';
+}
+.head {
+    display: grid;
+    background-color: #4e2121c9;
+    color: white;
+    padding: 13px;
+    box-sizing: border-box;
+    grid-area: head;
+}
+
+.part2 {
+    display: grid;
+    float: right;
+    grid-template-columns: 20px 20px 20px 20px 20px;
+    grid-gap:16px;
+    /* padding-top: 13px;
+    padding-bottom: 13px; */
+}
+.items {
+    border-right: 1px solid white;
+}
+/* .items:hover {
+    height:22px;
+    width: 22px;
+} */
+    /* width: 100%; */
+.navbar::before {
+    background: url("cupcake_bg.jpg") no-repeat;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.89;
+    grid-area: navbar;
+}
+.navbar {
+    width:100%;
+    z-index: 0;
+}
+ul {
+    list-style-type: none;
+    background-color: #711f1f85;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ul li {
+    align-items: center;
+    display: inline;
+    color: white;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: wheat;
+    min-width: 150px;
+    padding: 10px;
+    z-index: 0;
+    transition: all 0.5s;
+}
+.dropdown-content a {
+    display: block;
+    text-decoration-line: none;
+    transition: all 0.5s;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: antiquewhite;
+    color: #c66161;
+}
+li:hover {
+    background-color: #ad3a3a85;
+    color: yellow;
+    cursor: pointer;
+}
+.section {
+    width:480px;
+    height:151px;
+    position: absolute;
+    left: 46px;
+    top:169px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding:5px;
+    transition: all 0.5s;
+    text-align: left;
+    z-index: 0;
+    grid-area: section;
+}
+#name {
+    color: rgb(162, 77, 20);
+    font-weight: bolder;
+}
+.section h1 {
+    color:#8f4e4e;
+}
+.section p {
+    color: #ffeeed;
+}
+.section:hover {
+    background-color: rgba(136, 116, 105,0.4);
+    color: floralwhite;
+    box-shadow: 1px 1px rgb(57, 57, 57);
+}
+.section:hover h1 {
+    color: rgb(246, 246, 246);
+    text-shadow: 1px 1px brown;
+}
+.btn {
+    margin: 20px;
+    width: 119px;
+    height: 48px;
+    border-radius: 27px;
+    border:1px solid #8f4e4e;
+    background-color: #9b4b4b;
+    color: white;
+    z-index: 0;
+    transition: all 0.5s;
+}
+.btn:hover {
+    background-color: #c66161;
+}
+/* .aside {
+    float: right;
+    z-index: 1;
+} */
