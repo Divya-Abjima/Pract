@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction() {
+            document.getElementById("message").innerHTML = "Welcome";
+            document.getElementById("body").style.backgroundColor="#cbcbe9";
+            document.getElementById("btn").style.backgroundColor="#e22cce63";
+            alertMessage();
+        }
+        function alertMessage() {
+            alert("Text changed!");
+        }
+    </script>
+</head>
+<body id="body">
+        <p id="message">
+            Click on this button
+        </p>
+        <button id="btn" onclick="myfunction()">Change</button>
+</body>
+</html>
