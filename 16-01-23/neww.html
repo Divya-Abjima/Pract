@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Calculating result:</h3>
+    <p> Number 1 = 2530 <br>
+    Number 2 = 748 <br>
+    <p id="demo"></p>
+    </p>
+    <button id="add" onclick="getSum()">+</button>
+        <button id="sub" onclick="getDif()">-</button>
+        <button id="mul" onclick="getProd()">*</button>
+        <button id="div" onclick="getDiv()">/</button>
+        <button id="mod" onclick="getRem()">%</button>
+        <h3>String Methods:</h3>
+        <p>This is a string -</p>
+        <p id="string">"I live in jaipur."</p>
+        <button id="mod" onclick="myFunction()">Click to change</button>
+        <p>
+           <span id="length"> length of the string: </span> <br>
+           <span id="slice">sliced string:</span> <br>
+           <span id="substring">substring of given string: </span> <br>
+           <span id="substr">substr in given string:</span> <br>
+           <span id="replace">replaced a word in the string:</span>
+        </p>
+        <script>
+            function getSum() {
+                return alert(2530 + 748);
+            }
+            function getDif() {
+                return alert(2530 - 748);
+            }
+            function getProd() {
+                return alert(2530 * 748);
+            }
+            function getDiv() {
+                return alert(2530 / 748);
+            }
+            function getRem() {
+                return alert(2530 % 748);
+            }
+            function myFunction() {
+                let text = document.getElementById('string').innerHTML;
+                document.getElementById('length').innerHTML= "length of the string: " + text.length;
+                document.getElementById('slice').innerHTML= "sliced string: " + text.slice(-6,-4);
+                document.getElementById('substring').innerHTML= "substring of given string: " + text.substring(4,10);
+                document.getElementById('substr').innerHTML= "substr in given string: " + text.substr(8,10);
+                document.getElementById('replace').innerHTML= "replaced a word in the string: " + text.replace("jaipur","Rajasthan");
+                alert("String altered");
+            }
+        </script>
+</body>
+</html>

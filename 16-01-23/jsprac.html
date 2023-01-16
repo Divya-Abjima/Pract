@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body {
+        display: grid;
+        width: 300px;
+        margin: auto;
+        padding: 10px;
+        background-color: rgb(126 126 126 / 37%);
+        border-radius: 5px;
+    }
+    input, button  {
+        width:100px;
+        border: 1px solid black;
+        border-radius: inherit;
+    }
+    .btns {
+        display: block;
+    }
+</style>
+<body>
+    <div class="body">
+        <label for="num1">1st Number</label>
+        <input type="text" id="num01" name="num1">
+        <label for="num2">2nd Number</label>
+        <input type="text" id="num02" name="num2">
+        <label id="result">Result</label>
+      <div class="btns">
+        <button id="add" onclick="document.getElementById('result').innerHTML = getSum()">+</button>
+        <button id="sub" onclick="getDif()">-</button>
+        <button id="mul" onclick="getProd()">*</button>
+        <button id="div" onclick="getDiv()">/</button>
+        <button id="mod" onclick="getRem()">%</button>
+      </div>
+    </div>
+    <script>
+        var x = document.getElementsByName("num1").innerHTML;
+        var y = document.getElementsByName("num2").innerHTML;
+        var sum = getSum(x,y);
+        function getSum(x , y) {
+            return alert(x+y);
+        }
+    </script>
+</body>
+</html>
