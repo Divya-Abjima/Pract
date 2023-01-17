@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.652),rgba(255, 166, 0, 0.652),rgba(255, 255, 0, 0.652));
+}
+#body {
+    padding: 15px;
+}
+#btn {
+    padding: 5px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: orangered;
+    border-radius: 3px;
+    border:1px solid orange;
+    transition: all 0.5;
+}
+#fontbtn {
+    padding: 5px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(109, 251, 81, 0.89);
+    border-radius: 3px;
+    border:1px solid rgb(127, 226, 145);
+}
+#fontbtn {   
+}

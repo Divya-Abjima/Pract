@@ -1,0 +1,30 @@
+header {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(28, 252, 244);
+}
+ul {
+    list-style-type: none;
+    border: 2px solid black;
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(33, 235, 55);
+}
+ul li {
+    display: inline;
+    margin:30px;
+}
+#section {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 150px;
+}
+#dark {
+    background-color: black;
+    color: white;
+    border: 3px solid greenyellow;
+    border-radius: 15px;
+}
