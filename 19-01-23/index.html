@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Report</li>
+        </ul>
+    </nav>
+    <table>
+        <caption id ="caption">Practice table</caption>
+        <tr>
+            <td>HEAD</td>
+            <td>HEAD</td>
+            <td>HEAD</td>
+            <td>HEAD</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table>
+    <label for="text"> Enter text: </label>
+    <input type="text" id ="text">
+    <button onclick="showValue()">Check</button>
+    
+    <!-- calculation section -->
+    <div class="body">
+        <label for="num1">1st Number</label>
+        <input type="text"  oninput="getValue()" id="num01" name="num1">
+        <label for="num2">2nd Number</label>
+        <input type="text" id="num02" name="num2">
+        <div id="result">Answer</div>
+      <div class="btns">
+        <button id="add" onclick="getSum()">+</button>
+        <button id="sub" onclick="getDif()">-</button>
+        <button id="mul" onclick="getProd()">*</button>
+        <button id="div" onclick="getDiv()">/</button>
+        <button id="mod" onclick="getMod()">%</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
