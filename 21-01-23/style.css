@@ -1,0 +1,34 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+body {
+    height:100%;
+    width:100%;
+}
+.container {
+    border: 2px solid black;
+    margin:10px;
+    padding: 10px;
+    width: 900px;
+    border-radius: 5px;
+}
+.heading {
+    background-color: #59574b;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px 25px 25px 10px;
+}
+#content{
+    margin: 10px;
+    padding:10px;
+    background-color: aquamarine;
+    width: 590px;
+}
+ol {
+    margin: 20px;
+}
