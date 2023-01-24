@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <div class="container">
+        Enter a number: <br>
+        <input type="number" id="num" min="10" max="100" required>
+        <button onclick="checkIfvalid()">Validate</button>
+        <div id="result"></div>
+    </div>
+    <div class="container2">
+        Adding two numbers: <br>
+        <input type="number" max="1000" id="num1"> <br>+ <br>
+        <input type="number" max="1000" id="num2"> <br>
+        <button onclick="addNum()">Calculate</button>
+        <p id="sum"></p>
+    </div>
+    <div class="container3">
+        <h2 id="message">Paragraph</h2>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, rem asperiores dolorem voluptas maxime
+            omnis? Perspiciatis reiciendis ut quisquam ipsam ea natus recusandae aliquid ducimus deleniti temporibus
+            architecto tempore, accusantium officiis eligendi obcaecati doloribus culpa magnam quos! Quia, iste vel?</p>
+            <button onclick="changeText()">Change text</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="cript.js"></script>
+</body>
+
+</html>
