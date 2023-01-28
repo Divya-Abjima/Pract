@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width:600px)" href="mobileview.css">
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <h1 style="font-family: 'Playfair Display', serif;font-weight: 800;">W.</h1>
+      <ul>
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid">
+    <img src="image-web-3-desktop.jpg" alt="image-web-3-desktop" class="grid-item">
+    <img src="image-web-3-mobile.jpg" alt="image-web-3-mobile" class="grid-item" style="display:none;">
+    <div id="sidebar" class="grid-item">
+      <h1>New</h1>
+      <div>
+        <div>
+          <h4 class="sideinfo">Hydrogen VS Electric Cars</h4>
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </div>
+        <div id="border">
+          <h4 class="sideinfo">The Downsides of AI Artistry</h4>
+          What are the possible adverse effects of on-demand AI image generation?
+        </div>
+        <div>
+          <h4 class="sideinfo">Is VC Funding Drying Up?</h4>
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </div>
+      </div>
+    </div>
+    <div id="section1" class="grid-item">
+      The Bright Future of Web 3.0?
+    </div>
+    <div id="section2" class="grid-item">
+      <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+        of
+        the
+        people.
+        But is it really fulfilling its promise?
+      </p>
+      <button id="read">READ MORE</button>
+    </div>
+
+    <div id="box1" class="box grid-item">
+      <img src="image-retro-pcs.jpg" alt="retro pcs" width="75%" height="100%">
+      <div class="boxitem">
+        <div class="number">01</div>
+        <h4>Reviving Retro PCs</h4>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div id="box2" class="box grid-item">
+      <img src="image-top-laptops.jpg" alt="top laptops" width="100%" height="100%">
+      <div class="boxitem">
+        <div class="number">02</div>
+        <h4>Top 10 Laptops of 2022</h4>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div id="box3" class="box grid-item">
+      <img src="image-gaming-growth.jpg" alt="gaming growth" width="100%" height="100%">
+      <div class="boxitem">
+        <div class="number">03</div>
+        <h4>The Growth of Gaming</h4>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

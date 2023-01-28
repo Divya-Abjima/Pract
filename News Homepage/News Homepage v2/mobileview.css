@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+.body {
+    width:100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.container {
+    display: grid;
+    width:80%;
+    grid-template-areas:
+    'head'
+    'grid';
+    align-items: center;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    /* width: 100%; */
+    grid-area: 'grid';
+}
+img[src="image-retro-pcs.jpg"], 
+img[src="image-top-laptops.jpg"],
+img[src="image-gaming-growth.jpg"]
+{
+    width:95px;
+    height:100px;
+}
+.boxitem > h4, .boxitem > p {
+    height:30px;
+    font-size: small;
+}
+.number {
+    font-size: medium;
+}
+img[alt='menu-icon'] {
+    position: relative;
+    top:30px;
+    left:157px;
+}
+.head > h1 {
+    position: relative;
+    right:35px;
+}
+.dropdown {
+    position:absolute;
+}
+.dropdown-content {
+    position:relative;
+    display:inline-block;
+    z-index: 1;
+}

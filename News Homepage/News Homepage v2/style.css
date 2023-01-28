@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* regular 400- font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/*bold 700 - font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+/*extrabold 800 - font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+.grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+img[src ="image-web-3-desktop.jpg"] {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width:100%;
+    grid-area: 'img1';
+}
+#section1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size:45pt;
+    text-align: left;
+    width:80%;
+}
+#section2 {
+    grid-area: 'section2';
+}
+p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+#read {
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(5, 85%, 63%);
+    border: 1px solid hsl(5, 85%, 63%);
+    padding:8px 14px;
+    margin: 5px 0px 5px 0px;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 3pt;
+    width:50%;
+    height: 40px;
+}
+#sidebar  {
+    background-color: hsl(240, 100%, 5%);
+    color:hsl(233, 8%, 79%);
+    font-size: 15px;
+    padding: 20px 15px;
+    height:100%;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+#sidebar > h1 {
+    color:hsl(35, 77%, 62%);
+}
+.sideinfo {
+    color: hsl(36, 100%, 99%);
+}
+#border {
+    border-top: 1px solid hsl(236, 13%, 42%);
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+    padding-bottom:15px;
+    margin-top: 20px;
+} 
+.number {
+    color:hsl(233, 8%, 79%);
+    font-size: xx-large;
+}
+.box {
+    display:grid;
+    grid-template-columns: 30% 60%;
+    grid-gap:10px;
+}
