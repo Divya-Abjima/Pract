@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="mobilestyle.css">
+  <link rel="stylesheet" href="mobilemenu.css">
+  <link rel="stylesheet" href="desktopstyle.css" media="screen and (min-width:450px)">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <span style="font-size:30px;cursor:pointer" onclick="openMenu()">
+          <img src="icon-menu.svg" alt="menu icon">
+        </span>
+        <div class="overlay" id="mobilenav">
+          <a href="javascript:void(0)" class="close" onclick="closeMenu()">
+            <img src="icon-close.svg" alt="close icon">
+          </a>
+          <div class="overlay-content">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <img src="logo.svg" alt="logo" height="40px">
+      <div class="desktop-menu">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <img src="icon-cart.svg" alt="cart icon" id="cart">
+      <img src="avatar.png" alt="my avatar" height="25px">
+      <div id="itemcount" style="display: none;">
+      </div>
+    </header>
+    <div class="mycart box" style="display: none;">
+      <div id="pt1">Cart</div>
+      <div class="details">
+        <img src="thumbnail1.jpg" alt="product thumbnail" class="thumbnail">
+        <img src="2thumbnail.jpg" alt="product thumbnail" class="thumbnail">
+        <img src="thumbnail3.jpg" alt="product thumbnail" class="thumbnail">
+        <img src="thumbnail4.jpg" alt="product thumbnail" class="thumbnail">
+        <div id="cartcontent">
+        </div>
+        <img src="icon-delete.svg" alt="delete item" id="delete">
+        <div id="checkoutbtn">
+          Checkout
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="slideshow-box">
+        <div class="shoeslides">
+          <img src="product 1.jpg" alt="product 1" width="100%">
+        </div>
+        <div class="shoeslides">
+          <img src="product 2.jpg" alt="product 2" width="100%">
+        </div>
+        <div class="shoeslides">
+          <img src="product 3.jpg" alt="product 3" width="100%">
+        </div>
+        <div class="shoeslides">
+          <img src="product 4.jpg" alt="product 4" width="100%">
+        </div>
+        <a class="prev" onclick="plusSlides(1)">
+          <img src="previous.svg" alt="previous icon" width="35%" style="position: relative; top:23%; right:7%">
+        </a>
+        <a class="next" onclick="plusSlides(-1)">
+          <img src="next.svg" alt="next icon" width="35%" style="position: relative; top:23%; left:7%">
+        </a>
+      </div>
+      <div class="gallery">
+        <img src="product 1.jpg" id="bigpicture" alt = "picture" width="100%">
+        <div class="smallpic">
+          <img src="thumbnail1.jpg" alt="product thumbnail" onclick='displayImage(1)'>
+          <img src="2thumbnail.jpg" alt="product thumbnail" onclick='displayImage(2)'>
+          <img src="thumbnail3.jpg" alt="product thumbnail" onclick='displayImage(3)'>
+          <img src="thumbnail4.jpg" alt="product thumbnail" onclick='displayImage(4)'>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="body">
+          <h5>SNEAKER COMPANY</h5>
+
+          <h2>Fall Limited Edition Sneakers</h2>
+
+          <p>
+            These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <span id="price">
+            $125.00
+          </span>
+          <span id="discount">
+            50%
+          </span>
+          <span id="realprice">
+            $250.00
+          </span>
+        </div>
+        <div class="itemselect">
+          <img src="icon-plus.svg" alt="plus" onclick="addItem()">
+          <span id="count">0</span>
+          <img src="icon-minus.svg" alt="minus" onclick="removeItem()">
+        </div>
+        <div id="addtocart" onclick="addToCart()">
+          Add to cart
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+.overlay {
+  height: 100%;
+  width: 00;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  color: hsl(220, 13%, 13%);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/*pictures*/
+.slideshow-box {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  transition: 0.5s ease;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  border-color: hsl(26, 100%, 55%);
+}
+
+.mycart {
+  width: 300px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin: auto;
+  padding: 5px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+#pt1 {
+  height: 20%;
+  padding: 5px 10px;
+  position: relative;
+  top: 10px;
+  font-weight: 700;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.details {
+  height: 60%;
+  color: hsl(219, 9%, 45%);
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top: 15%;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 0.5fr;
+}
+
+#checkoutbtn {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 10px;
+  background-color: hsl(26, 100%, 55%);
+  grid-column: 1/span 3;
+}
+
+img[alt='delete'] {
+  position: relative;
+  left: 35%;
+  top: 20%;
+}
+
+@media screen and (max-height: 600px),
+(max-width: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  body {
+    z-index: 0;
+  }
+
+  .prev,
+  .next {
+    font-size: 11px
+  }
+
+  .mycart,
+  .container {
+    width: 100%
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .lightbox {
+    display: none;
+  }
+
+  img[alt="logo"] {
+    width: 40%;
+  }
+  .mycart {
+    width:90%;
+    position:absolute;
+    margin: 13px;
+  }
+}
