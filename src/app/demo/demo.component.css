@@ -1,0 +1,9 @@
+p {
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+#para {
+    font-size: 15px;
+    outline: 1px solid violet;
+    text-align: center;
+}
