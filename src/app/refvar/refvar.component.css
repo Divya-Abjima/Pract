@@ -1,0 +1,12 @@
+* {
+    padding:5px;
+    margin:15px;
+}
+div {
+    background-color: rgb(178, 174, 174);
+    width:40%;
+}
+button {
+    border:1px solid gray;
+    border-radius: 5px;
+}

@@ -1,0 +1,4 @@
+<button (click) = "display()">Show values</button>
+<div class="box" *ngFor="let showColor of colors;index as i">
+    <div>{{i+1}}. {{showColor}}</div>    
+</div>

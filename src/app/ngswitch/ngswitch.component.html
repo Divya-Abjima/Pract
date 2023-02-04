@@ -1,0 +1,9 @@
+<div [ngSwitch] = "color">
+<label *ngSwitchCase = "'red'"></label>
+    <input type="radio" name="color"(click) = "showColor(1)">
+<label *ngSwitchCase = "'green'"></label>
+    <input type="radio" name="color" (click) = "showColor(2)">
+<label *ngSwitchCase = "'blue'"></label>
+    <input type="radio" name="color" (click) = "showColor(3)">
+</div>
+{{color}} <br>

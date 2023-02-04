@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PropertyComponent } from './property/property.component';
-import { ClassComponent } from './class/class.component';
-import { StyleComponent } from './style/style.component';
-import { EventComponent } from './event/event.component';
+import { RefvarComponent } from './refvar/refvar.component';
+import { NgifComponent } from './ngif/ngif.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { NgforComponent } from './ngfor/ngfor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PropertyComponent,
-    ClassComponent,
-    StyleComponent,
-    EventComponent
+    RefvarComponent,
+    NgifComponent,
+    NgswitchComponent,
+    NgforComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

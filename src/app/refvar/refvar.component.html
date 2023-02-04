@@ -1,0 +1,15 @@
+<div>
+<label>Enter your name<br>
+<input #fName type = "text">
+</label><br>
+<label>Enter your last name<br>
+<input #lName type = "text">
+</label><br>
+<button (click) = "displayName(fName.value, lName.value)">Show</button>
+{{name}}<br>
+<label>Enter your age<br>
+<input #myage type = "number" min="1" max="120">
+</label>
+<button (click) = "validAge(myage.value)">Validate</button>
+{{age}}
+</div>
