@@ -3,18 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RefvarComponent } from './refvar/refvar.component';
-import { NgifComponent } from './ngif/ngif.component';
-import { NgswitchComponent } from './ngswitch/ngswitch.component';
-import { NgforComponent } from './ngfor/ngfor.component';
+import { InteractComponent } from './interact/interact.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RefvarComponent,
-    NgifComponent,
-    NgswitchComponent,
-    NgforComponent
+    InteractComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

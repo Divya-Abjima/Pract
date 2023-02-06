@@ -1,0 +1,11 @@
+div {
+    width:fit-content;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(235, 207, 192);
+}
+button {
+    margin:5px 10px;
+}

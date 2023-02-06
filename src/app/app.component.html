@@ -1,7 +1,4 @@
-<app-refvar>
-</app-refvar>
-<app-ngif>
-</app-ngif>
-<app-ngswitch>
-</app-ngswitch>
-<app-ngfor></app-ngfor>
+<app-interact (checkEvent)="message=$event" [parentInfo]="greeting"></app-interact>
+  <p style="text-align: center;">{{message}}</p>
+<app-pipes></app-pipes>
+<router-outlet></router-outlet>

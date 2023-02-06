@@ -1,0 +1,16 @@
+<div>
+    <input #mystring type="text" placeholder="enter a string">
+    <button (click)="addpipes(mystring.value)">Check pipes for string</button>
+    <p>{{sendValue}}</p>
+    <p>{{sendValue | lowercase}}</p>
+    <P>{{sendValue | uppercase}}</P>
+    <p>{{sendValue | titlecase}}</p>
+    <p>{{sendValue | slice:3:7}}</p>
+    <input #mynumber type="number" placeholder="enter a number">
+    <button (click)="addnopipes(mynumber.value)">Check pipes for numeric value</button>
+    <p>{{numstring}}</p>
+    <p>{{numstring | number : '1.2-3'}}</p>
+    <P>{{numstring | number : '2.3-4'}}</P>
+    <p>{{numstring | percent}}</p>
+    <p>{{numstring | currency}}</p>
+</div>

@@ -1,0 +1,12 @@
+<div class="box">
+    <h3>Welcome</h3>
+    <input type="text" #name placeholder="enter your name">
+    <button (click)="displayMessage(name.value)">click here</button>
+    <div>{{greet | titlecase}}</div>
+    <div *ngIf="show">
+        Enter the password: <br>
+        <input #pwd type="password">
+        <button (click)="checkpass(pwd.value)">Login</button>
+        <!-- <div [style.color]="valid ? 'green' : 'red'"></div> -->
+    </div>
+</div>
