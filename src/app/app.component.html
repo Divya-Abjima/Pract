@@ -1,2 +1,9 @@
-<app-mylist></app-mylist>
-<app-mydetails></app-mydetails>
+<app-interact (checkEvent)="message=$event" [parentInfo]="greeting"></app-interact>
+<p style="text-align: center;">{{message}}</p>
+<app-pipes></app-pipes>
+<div>
+  <h3>Details fetch by http request from a local folder:</h3>
+  <app-emplist></app-emplist>
+  <app-empdetail></app-empdetail>
+</div>
+<router-outlet></router-outlet>

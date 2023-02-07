@@ -1,0 +1,11 @@
+div {
+    border:1px solid;
+    border-color: rgba(77, 1, 148, 0.853);
+    width: 35%;
+    padding:5px;
+    margin:5px;
+}
+li {
+    list-style-type: none;
+    width:fit-content;
+}
