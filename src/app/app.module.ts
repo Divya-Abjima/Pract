@@ -3,20 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InteractComponent } from './interact/interact.component';
-import { PipesComponent } from './pipes/pipes.component';
+import { MylistComponent } from './mylist/mylist.component';
+import { MydetailsComponent } from './mydetails/mydetails.component';
+import { MyserviceService } from './myservice.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InteractComponent,
-    PipesComponent
+    MylistComponent,
+    MydetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
