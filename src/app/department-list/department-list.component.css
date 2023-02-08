@@ -1,16 +1,32 @@
 ul {
-    list-style-type: none;
-    border:1px solid black;
-    width:fit-content;
-    padding:0px;
-}
-.container {
-    display: flex;
+    margin:0px;
+    width:30%;
 }
 li {
-    text-align: center;
-    padding: 5px 20px;
+    list-style-type: none;
+    margin:0px;
+    margin-bottom: 20px;
+    width:20%;
+    background: rgb(247 231 231);
+    color: rgb(194, 7, 7);
+    padding: 5px;
 }
-ul .heading {
-    border-bottom: 1px solid black;
+#number {
+    background: rgb(194, 7, 7);
+    color: white;
+    padding: 5px;
+    border-radius: 3px 0px 0px 3px;
+}
+.dept {
+    width: 20px;
+    padding: 5px;
+    border-radius: 3px 0px 0px 3px;
+    width: 20%;
+}
+li:hover {
+    cursor: pointer;
+}
+.selected {
+   background-color: rgba(203, 169, 169, 0.797);
+   color:white;
 }
