@@ -1,16 +1,43 @@
-a {
-    text-decoration: none;
-    background-color: rgb(242, 166, 73);
+* {
+    margin:5px 10px;
+}
+.box {
+    display:flex;
+    flex-direction: column;
+}
+input,select {
+    border: 1px solid ;
+    border-radius: 5px;
+    padding:5px;
+    width:30%;
+}
+input[type="radio"], input[type="checkbox"] {
+    width:10px;
+    
+}
+button {
     color:white;
-    padding:10px;
-    margin:10px;
+    background: #146eff;
+    border:none;
+    padding: 8px 25px;
+    border-radius: 8px;
 }
-.nav {
-    margin-top: 30px;
+select {
+    width:20%;
 }
-a.active {
-   color:  rgb(242, 166, 73);
-   background-color: white;
-   border: 1px solid rgb(242, 166, 73);
 
+button:active {
+    background-color: #0b58d3;
+}
+button:disabled {
+    background-color: #6387c1;
+}
+input:focus {
+    outline: 3px solid rgba(237, 237, 51, 0.775);
+}
+.isInvalid {
+    outline: 3px solid rgb(246, 139, 139);
+}
+.invalid {
+    color: rgb(246, 139, 139);
 }

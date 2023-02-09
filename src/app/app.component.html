@@ -1,6 +1,61 @@
-<div>View the details by clicking these buttons</div>
-<div class="nav">
-  <a routerLink = "/employees" routerLinkActive = 'active'>Employees</a>
-  <a routerLink = "/departments-list" routerLinkActive = 'active'>Department</a>
-</div>
-<router-outlet></router-outlet>
+<form #myform="ngForm" (ngSubmit)="onSubmit()" novalidate>
+
+  {{myform.value | json}} <br>
+
+  {{userModel | json}} <br>
+
+  {{myform.form.valid}}
+
+  <div class="box">
+    <label>Name</label>
+    <input type="text" required #name="ngModel" [class.isInvalid]="name.invalid && name.touched" name="user"
+      [(ngModel)]="userModel.name">
+  </div>
+
+  <div class="box">
+    <label>Email</label>
+    <input type="email" #email="ngModel" [class.isInvalid]="email.invalid && email.touched" name="email"
+      [(ngModel)]="userModel.email">
+  </div>
+
+  <div class="box">
+    <label>Phone</label>
+    <input type="tel" pattern="^\d{10}$" required #phone="ngModel" [class.isInvalid]="phone.invalid && phone.touched"
+      name="phone" [(ngModel)]="userModel.phone">
+    <!-- <small *ngIf="phone.invalid && phone.touched" [class.invalid]="phone.invalid">phone number is invalid</small> -->
+    <div *ngIf="phone.errors && (phone.invalid && phone.touched)" [class.invalid]="phone.invalid">
+      <small *ngIf="phone.errors['required']">phone number is required</small>
+      <small *ngIf="phone.errors['pattern']">phone number must have ten digits</small>
+    </div>
+  </div>
+
+  <div class="box">
+    <select (blur)="validateTopic(topic.value)" (change)="validateTopic(topic.value)" required name="topic" #topic="ngModel" [class.isInvalid]="hasError && topic.touched" [(ngModel)]="userModel.topic">
+      <option value="default">Select an option</option>
+      <option value="angular">Angular</option>
+      <option value="React">React</option>
+      <option value="vue">Vue</option>
+    </select>
+    <small class="invalid" *ngIf="hasError && topic.touched">Choose a topic</small>
+  </div>
+
+  <div class="box">
+    <label>Time reference</label>
+    <div>
+      <input type="radio" value="morning" name="timing" [(ngModel)]="userModel.timing">
+      <label>Morning (9AM - 12PM)</label>
+    </div>
+    <div>
+      <input type="radio" value="evening" name="timing" [(ngModel)]="userModel.timing">
+      <label>Evening (5PM - 8AM)</label>
+    </div>
+  </div>
+
+  <div class="box" style="flex-direction: row;">
+    <input type="checkbox" name="subscribe" [(ngModel)]="userModel.subscribe">
+    <label>Do you want to receive notifications</label>
+  </div>
+
+  <button (click)="submit=true" [disabled] = "myform.form.invalid || hasError">Submit</button>
+  {{submit}}
+</form>
