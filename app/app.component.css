@@ -1,0 +1,37 @@
+* {
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    margin:5px 10px;
+}
+input {
+    padding: 10px 5px;
+    border-color: rgba(0, 0, 0, 0.204);
+    border-radius: 8px;
+}
+button {
+    width:30%;
+    margin:10px 20px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    background-color: rgb(35, 104, 223);
+    color:white;
+    border: none;
+    border-radius: 8px;
+    outline: 1px solid white
+}
+form {
+    background-color: gainsboro;
+    width: 350px;
+}
+.btns {
+    flex-direction: row;
+}
+button:active {
+    background-color: rgba(35, 104, 223, 0.73);
+}
+.isInvalid {
+    border-color: rgba(255, 8, 8, 0.718);
+}

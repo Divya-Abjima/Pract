@@ -1,0 +1,45 @@
+<form [formGroup]="registerForm">
+  <div class="box">
+    <label>Name</label>
+    <input type="text" formControlName="username"
+      [class.isInvalid]="registerForm.controls.username.invalid && registerForm.controls.username.touched">
+    <div class="errorMsg" *ngIf="registerForm.controls.username.invalid && registerForm.controls.username.touched">
+      <small style="color: red;" *ngIf="registerForm.controls.username.errors?.['required']">Field can't be
+        empty</small>
+      <small style="color: red;" *ngIf="registerForm.controls.username.errors?.['minlength']">name is too small</small>
+      <small style="color: red;"
+        *ngIf="registerForm.controls.username.errors?.['forbiddenName']">{{registerForm.controls.username.errors?.['forbiddenName'].value}}
+        username not allowed</small>
+    </div>
+  </div>
+
+  <div class="box">
+    <label for="">Enter Password</label>
+    <input type="password" formControlName="password">
+  </div>
+
+  <div class="box">
+    <label for="">Confirm password</label>
+    <input type="password" name="pwd" formControlName="confirmPwd">
+    <div class="errormsg" style="color:red;">
+      <small *ngIf="registerForm.errors?.['misMatch'] && (registerForm.controls.password.touched && registerForm.controls.confirmPwd.touched)">password don't match</small>
+    </div>
+  </div>
+  <div class="box" formGroupName="address">
+    <label for="">House No.</label>
+    <input type="text" name="plotNo" formControlName="plotNo">
+    <label for="">Street/Area</label>
+    <input type="text" formControlName="street">
+    <label for="">City</label>
+    <input type="text" formControlName="city">
+    <label for="">State</label>
+    <input type="text" formControlName="state">
+  </div>
+
+  <div class="btns">
+    <button>Submit</button>
+    <button (click)='demoData()'>Show demo data</button>
+  </div>
+
+</form>
+{{registerForm.value | json}}
