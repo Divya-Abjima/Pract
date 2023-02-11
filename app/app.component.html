@@ -14,6 +14,20 @@
   </div>
 
   <div class="box">
+    <label>Email</label>
+    <input type="text" formControlName = "email">
+    <button (click)="addAlternateEmail()">Add email</button>
+    <div formArrayName="alternateEmails" *ngFor="let email of alternateEmails.controls; let i = index">
+      <input type="text" [formControlName]="i" name="alternateEmail">
+    </div>
+
+    <div style="flex-direction: row;">
+      <input type="checkbox" style="width:15px">
+      <label for="">Send notifications</label>
+    </div>
+  </div>
+
+  <div class="box">
     <label for="">Enter Password</label>
     <input type="password" formControlName="password">
   </div>
@@ -22,7 +36,9 @@
     <label for="">Confirm password</label>
     <input type="password" name="pwd" formControlName="confirmPwd">
     <div class="errormsg" style="color:red;">
-      <small *ngIf="registerForm.errors?.['misMatch'] && (registerForm.controls.password.touched && registerForm.controls.confirmPwd.touched)">password don't match</small>
+      <small
+        *ngIf="registerForm.errors?.['misMatch'] && (registerForm.controls.password.touched && registerForm.controls.confirmPwd.touched)">password
+        don't match</small>
     </div>
   </div>
   <div class="box" formGroupName="address">
