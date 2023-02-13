@@ -2,7 +2,12 @@
     display: flex;
     flex-direction: column;
     width:300px;
-    margin:5px 10px;
+    margin:10px 5px;
+}
+.container {
+    width: fit-content;
+    padding: 5px;
+    background: rgb(220, 217, 217);
 }
 input {
     padding: 10px 5px;
@@ -10,9 +15,9 @@ input {
     border-radius: 8px;
 }
 button {
-    width:30%;
-    margin:10px 20px;
-    padding: 5px;
+    width:150px;
+    margin:10px 5px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     font-size: small;
@@ -22,16 +27,9 @@ button {
     border-radius: 8px;
     outline: 1px solid white
 }
-form {
-    background-color: gainsboro;
-    width: 350px;
-}
-.btns {
+.newfield {
     flex-direction: row;
 }
-button:active {
-    background-color: rgba(35, 104, 223, 0.73);
-}
-.isInvalid {
-    border-color: rgba(255, 8, 8, 0.718);
+.update {
+    flex-direction: row;
 }
